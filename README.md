@@ -25,10 +25,10 @@ X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 Tesla Binary Message: {"msg_type":"control:hello","connection_timeout":0}
 ```
-The last line, Tesla Binary Message, is from the Tesla server.  The Tesla server waits for the subscibe response from the program.  Copy the first line (starts with {"msg_type") to the clipboard.  Paste it after the last line and press Enter.  If the vehicle is on-line, the response appears.
+The last line, Tesla Binary Message, is from the Tesla server.  The Tesla server waits for the subscibe response from the program.  Copy the first line (starts with {"msg_type") to the clipboard.  Paste it after the last line and press Enter.  If the vehicle is on-line, the response appears (<lat> and <long> appear here instead of the actual latitude and longitude values).
 
 ```
-Tesla Binary Message: {"msg_type":"data:update","tag":"1849964392","value":"1609599517956,,7158.7,81,317,139,41.371948,-81.429555,0,,195,147,138,41.369069,-81.388726,41.371948,-81.429555,139,wgs,1"}
+Tesla Binary Message: {"msg_type":"data:update","tag":"your vehicle_id","value":"1609599517956,,7158.7,81,317,139,<lat>,<long>,0,,195,147,138,<lat>,<long>,<lat>,<long>,139,wgs,1"}
 ```
 
 
