@@ -26,9 +26,12 @@ X-Frame-Options: DENY
 Tesla Binary Message: {"msg_type":"control:hello","connection_timeout":0}
 ```
 The last line, Tesla Binary Message, is from the Tesla server.  The Tesla server waits for the subscibe response from the program.  Copy the first line (starts with {"msg_type") to the clipboard.  Paste it after the last line and press Enter.  If the vehicle is on-line, the response appears (<lat> and <long> appear here instead of the actual latitude and longitude values).
-
 ```
 Tesla Binary Message: {"msg_type":"data:update","tag":"your vehicle_id","value":"1609599517956,,7158.7,81,317,139,<lat>,<long>,0,,195,147,138,<lat>,<long>,<lat>,<long>,139,wgs,1"}
 ```
-
+Data is streamed when there is a change in a parameter.  If there are no changes after ten seconds, the Tesla server sends this indicating the vehicle is no longer connected.
+```
+Tesla Binary Message: {"msg_type":"data:error","tag":"your vehicle_id","value":"disconnected","error_type":"vehicle_disconnected"}
+```
+To start the stream again, send the subscribe response as described above.
 
