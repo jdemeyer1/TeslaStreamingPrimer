@@ -35,3 +35,4 @@ Tesla Binary Message: {"msg_type":"data:error","tag":"your vehicle_id","value":"
 ```
 To start the stream again, send the subscribe response as described above.
 
+Type the word exit in the Console and press Enter to exit the program.
