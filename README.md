@@ -9,7 +9,7 @@ The Java program imports the nv-websocket-client library located [here](https://
 ## Running the Program
 I execute the program in [Eclispe](https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers).
 
-When the program starts, it displays the following text to the Console (Sec-WebSocket-Accept has been masked).
+When the program starts successfully, it displays the following text to the Console (Sec-WebSocket-Accept has been masked).
 
 ```
 {"msg_type":"data:subscribe_oauth","token":"your token","value":"speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading,est_corrected_lat,est_corrected_lng,native_latitude,native_longitude,native_heading,native_type,native_location_supported","tag":"your vehicle_id"}
